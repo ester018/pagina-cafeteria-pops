@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Cafetería Pop's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="js/uno.js">
+<link rel="stylesheet" type="text/css" href="css/contactos.css">
+<script src="https://kit.fontawesome.com/49843a2e73.js" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-wide"><img class="logo" src="img/Logo.png"> </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small " style="padding: 15px;">
+      <a href="index.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;">ACERCA DE</a>
+      <a href="cafe.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;"><i class="fas fa-mug-hot"></i> CAFÉ</a>
+      <a href="menu.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;"><i class="far fa-caret-square-down"></i> MENÚ</a>
+      <a href="contactanos.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;"><i class="fa fa-envelope"></i> CONTACTANOS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ACERCA DE</a>
+  <a href="cafe.html" onclick="w3_close()" class="w3-bar-item w3-button">CAFÉ</a>
+  <a href="menu.html" onclick="w3_close()" class="w3-bar-item w3-button">MENÚ</a>
+  <a href="contactanos.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTANOS</a>
+</nav>
+<!-- Header with full-height image -->
+<header class="bgimg-3 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">¿Alguna vez te has puesto a pensar</span><br>
+    <span class="w3-large">y si es el cafe el que es adicto a mi?</span>  
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- Pricing Section -->
+<div class="w3-container" style="padding:128px 16px; background: white;" id="pricing" >
+  <h3 class="w3-center">Menú</h3>
+  <p class="w3-center w3-large">Nuestros mejores Productos</p>
+
+
+<section id="t-cards">
+    <div class="container">
+        <div class="row">
+             <div class="w3-col m3 col-md-3">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://images.ctfassets.net/hlvdy7x28mmo/6MVnm0FhkNSJcVYVLBgalg/272ae5aebe897298f94f260fd0eb9b9a/Chocolate_Fondant.jpg">
+                        <button class="w3-button w3-blue" style="border-radius: 30px;">Postre</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img src="https://images.ctfassets.net/hlvdy7x28mmo/6MVnm0FhkNSJcVYVLBgalg/272ae5aebe897298f94f260fd0eb9b9a/Chocolate_Fondant.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Fondant de Chocolate Caliente</h4>
+                        <small>Con dos bolas de vainilla (* vegano bajo pedido), helado de chocolate, fresa o caramelo salado</small>
+                    </div>
+                </div>   
+        </div>
+        <div class="w3-col m3 col-md-3">
+           <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://images.ctfassets.net/hlvdy7x28mmo/4leHKp9tm8dUVTLY4eiqhQ/944c318c1b4df2aa450a7cac1eeaea4c/Lemon_Tarte.jpg">
+                        <button class="w3-button w3-blue" style="border-radius: 30px;">Postre</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://images.ctfassets.net/hlvdy7x28mmo/4leHKp9tm8dUVTLY4eiqhQ/944c318c1b4df2aa450a7cac1eeaea4c/Lemon_Tarte.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Tarta de Limon</h4>
+                        <small>Con vainilla crème fraîche, dos cucharadas de sorbete de limón o mango</small>
+                    </div>
+           </div>      
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://images.ctfassets.net/hlvdy7x28mmo/15ltWwJZM1QoXi6rCdhtbL/71211e464cfdd5f1b1627cb7bb2f060c/Creme_Brulee.jpg">
+                        <button class="w3-button w3-blue" style="border-radius: 30px;">Postre</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://images.ctfassets.net/hlvdy7x28mmo/15ltWwJZM1QoXi6rCdhtbL/71211e464cfdd5f1b1627cb7bb2f060c/Creme_Brulee.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Creme Brule</h4>
+                        <small>Crema de vainilla caramelizada con un toque de almendra</small>
+                    </div>
+                </div>      
+                
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://ve.emedemujer.com/wp-content/uploads/sites/2/2016/09/mousse-de-chocolate-negro.jpg">
+                        <button class="w3-button w3-blue" style="border-radius: 30px;">Postre</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://ve.emedemujer.com/wp-content/uploads/sites/2/2016/09/mousse-de-chocolate-negro.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Mousse Bosque Negro</h4>
+                        <small>Mousse de chocolate negro francés Valrhona con capas de una jugosa compota de cereza roja</small>
+                    </div>
+                </div>     
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="t-cards">
+    <div class="container">
+        <div class="row">
+             <div class="w3-col m3 col-md-3">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://www.lajoyadelcafe.com/wp-content/uploads/2018/04/cafe-expreso6.jpg">
+                        <button class="w3-button w3-pink" style="border-radius: 30px;">Café</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img src="https://www.lajoyadelcafe.com/wp-content/uploads/2018/04/cafe-expreso6.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Café Expreso</h4>
+                        <small>Se caracteriza por su rápida preparación y por un sabor y textura más concentrados. </small>
+                    </div>
+                </div>   
+        </div>
+        <div class="w3-col m3 col-md-3">
+           <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://www.lajoyadelcafe.com/wp-content/uploads/2017/12/Caf%C3%A9-americano-taza.jpg">
+                        <button class="w3-button w3-pink" style="border-radius: 30px;">Café</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://www.lajoyadelcafe.com/wp-content/uploads/2017/12/Caf%C3%A9-americano-taza.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Café Americano</h4>
+                        <small>El café americano es la mezcla de agua caliente y café procesado en un máquina de Expreso.</small>
+                    </div>
+           </div>      
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://okdiario.com/img/2019/08/26/cafe-capuchino-655x368.jpg">
+                        <button class="w3-button w3-pink" style="border-radius: 30px;">Café</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://okdiario.com/img/2019/08/26/cafe-capuchino-655x368.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Café Capuchino</h4>
+                        <small>Preparada con café expreso y leche montada con vapor para otorgarle cremosidad.</small>
+                    </div>
+                </div>      
+                
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://live.staticflickr.com/7110/7034246365_3df5b9209c_b.jpg">
+                        <button class="w3-button w3-pink" style="border-radius: 30px;">Café</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://live.staticflickr.com/7110/7034246365_3df5b9209c_b.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Café Mocaccino</h4>
+                        <small>Éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate, si bien algunas máquinas usan chocolate en polvo instantáneo.</small>
+                    </div>
+                </div>     
+        </div>
+      </div>
+    </div>
+</section>
+<section id="t-cards">
+    <div class="container">
+        <div class="row">
+             <div class="w3-col m3 col-md-3">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/82c0d9edbe53-frapuccino-de-chocolate.jpg">
+                        <button class="w3-button w3-red" style="border-radius: 30px;">Frappé</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/82c0d9edbe53-frapuccino-de-chocolate.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Frapuccino de Café</h4>
+                        <small>Se compone de café u otro ingrediente de base, mezclado con hielo y otros ingredientes diversos, coronado con crema batida.</small>
+                    </div>
+                </div>   
+        </div>
+        <div class="w3-col m3 col-md-3">
+           <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://i2.wp.com/thehappening.com/wp-content/uploads/2017/11/portada-41.jpg?fit=1024%2C694&ssl=1">
+                        <button class="w3-button w3-red" style="border-radius: 30px;">Frappé</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://i2.wp.com/thehappening.com/wp-content/uploads/2017/11/portada-41.jpg?fit=1024%2C694&ssl=1" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Frappé Mocca Blanco</h4>
+                        <small>Hecho con chocolate blanco en lugar de negro o con leche.</small>
+                    </div>
+           </div>      
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://cdn.aarp.net/content/dam/aarp/food/recipes/2018/09/1140-chai-tea-warm-smoothie-esp.imgcache.revdd682a8db57a58d65b8e5c6fbff382a4.jpg">
+                        <button class="w3-button w3-red" style="border-radius: 30px;">Frappé</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://cdn.aarp.net/content/dam/aarp/food/recipes/2018/09/1140-chai-tea-warm-smoothie-esp.imgcache.revdd682a8db57a58d65b8e5c6fbff382a4.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Frappé Chai</h4>
+                        <small>Es muy famoso por tener un sabor muy especiado pero dulce.</small>
+                    </div>
+                </div>      
+                
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://i.ytimg.com/vi/1hIcujrGe6s/maxresdefault.jpg">
+                        <button class="w3-button w3-red" style="border-radius: 30px;">Frappé</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://i.ytimg.com/vi/1hIcujrGe6s/maxresdefault.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Frappé kongo(Menta y Chocolate)</h4>
+                        <small>Se prepara con hielo picado y jugo de fruta, café u otras bebidas o ingredientes, como jarabes o esencias, en este caso menta y chocolate</small>
+                    </div>
+                </div>     
+        </div>
+      </div>
+    </div>
+</section>
+<section id="t-cards">
+    <div class="container">
+        <div class="row">
+             <div class="w3-col m3 col-md-3">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_curiosidad__small/public/articulos/milkshake_fresa_chocolate.jpg">
+                        <button class="w3-button w3-yellow" style="border-radius: 30px;">Smoothies</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img src="https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_curiosidad__small/public/articulos/milkshake_fresa_chocolate.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Smoothies Con crema Batida</h4>
+                        <small>Es una bebida cremosa no alcohólica preparada a base de trozos y zumos de fruta, concentrados o congelados, mezclados tradicionalmente con productos lácteos, hielo o helado.</small>
+                    </div>
+                </div>   
+        </div>
+        <div class="w3-col m3 col-md-3">
+           <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://www.cocinayvino.com/wp-content/uploads/2017/02/66029480_l.jpg">
+                        <button class="w3-button w3-yellow" style="border-radius: 30px;">Smoothies</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://www.cocinayvino.com/wp-content/uploads/2017/02/66029480_l.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Smoothies Mezcla de Moras</h4>
+                        <small>Es una bebida sana, fresca y la mejor recompensa para una tarde de paseo recolectando moras. </small>
+                    </div>
+           </div>      
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://d1uz88p17r663j.cloudfront.net/original/A9D97076-811C-6377-B9D8-FF0000673B69-610x360-b-min.png">
+                        <button class="w3-button w3-yellow" style="border-radius: 30px;">Smoothies</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://d1uz88p17r663j.cloudfront.net/original/A9D97076-811C-6377-B9D8-FF0000673B69-610x360-b-min.png" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Smoothie De Durazno</h4>
+                        <small>Es una bebida sana, que utiliza agua o leche junto con frutas, en este caso durazno</small>
+                    </div>
+                </div>      
+                
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://cdn.kiwilimon.com/recetaimagen/31552/th5-640x426-36129.jpg">
+                        <button class="w3-button w3-yellow" style="border-radius: 30px;">Smoothies</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://cdn.kiwilimon.com/recetaimagen/31552/th5-640x426-36129.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Smoothie Hot Zafari</h4>
+                        <small>Es una bebida sana, presentada en 4 sabores.</small>
+                    </div>
+                </div>     
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="t-cards">
+    <div class="container">
+        <div class="row">
+             <div class="w3-col m3 col-md-3">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2018/11/beneficios-de-tomar-te-de-manzana-con-canela.jpg">
+                        <button class="w3-button w3-green" style="border-radius: 30px;">Té</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2018/11/beneficios-de-tomar-te-de-manzana-con-canela.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Té de Manzana con Canela</h4>
+                        <small>Si lo tomas, prevendrás los resfriados típicos del invierno. Acelera el metabolismo, por lo que ayuda a bajar de peso.</small>
+                    </div>
+                </div>   
+        </div>
+        <div class="w3-col m3 col-md-3">
+           <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://media.metrolatam.com/2020/06/16/parasirvetenegro-9ad06668c416e0ceee48981b931d7f58-1200x800.jpg">
+                        <button class="w3-button w3-green" style="border-radius: 30px;">Té</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://media.metrolatam.com/2020/06/16/parasirvetenegro-9ad06668c416e0ceee48981b931d7f58-1200x800.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Té Negro</h4>
+                        <small>Es un té que se encuentra oxidado en mayor grado que las variedades de té verde, té oolong y té blanco. Las cuatro variedades indicadas se preparan con hojas de Camellia sinensis. El té negro generalmente posee un aroma más fuerte y contiene más cafeína que otros tés con menores niveles de oxidación.</small>
+                    </div>
+           </div>      
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://www.clikisalud.net/wp-content/uploads/2020/05/te-de-manzanilla-cuarente-a.jpg">
+                        <button class="w3-button w3-green" style="border-radius: 30px;">Té</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://www.clikisalud.net/wp-content/uploads/2020/05/te-de-manzanilla-cuarente-a.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Té de Manzanilla</h4>
+                        <small>Se prepara con las ramitas de la manzanilla, puede agregarle azucar y si no lo desea no.</small>
+                    </div>
+                </div>      
+                
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://static.vix.com/es/sites/default/files/t/te-helado-durazno.jpg">
+                        <button class="w3-button w3-green" style="border-radius: 30px;">Té</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://static.vix.com/es/sites/default/files/t/te-helado-durazno.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Té de Durazno</h4>
+                        <small>El durazno contiene vitaminas del complejo B y C. Y es por esto que en nuestro menú decidimos implementar el Té de durazno</small>
+                    </div>
+                </div>     
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="t-cards">
+    <div class="container">
+        <div class="row">
+             <div class="w3-col m3 col-md-3">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://okdiario.com/img/2018/04/30/arepas-de-pollo.jpg">
+                        <button class="w3-button w3-black" style="border-radius: 30px;">Arepa</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img src="https://okdiario.com/img/2018/04/30/arepas-de-pollo.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Arepa de Pollo</h4>
+                        <small>Este plato se elabora a través de una masa casera que tiene como elemento principal la harina de maíz. Con una base de arepa tradicional podremos rellenarla de casi cualquier cosa y hacer nuestra una de las recetas más tradicionales que existe.</small>
+                    </div>
+                </div>   
+        </div>
+        <div class="w3-col m3 col-md-3">
+           <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://enrilemoine.com/wp-content/uploads/2016/08/1.-Tuna-Salad-Arepa-SAVOIR-FAIRE-by-enrilemoine.jpg">
+                        <button class="w3-button w3-black" style="border-radius: 30px;">Arepa</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://enrilemoine.com/wp-content/uploads/2016/08/1.-Tuna-Salad-Arepa-SAVOIR-FAIRE-by-enrilemoine.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Arepa de Atún</h4>
+                        <small>Las arepas de las fotos, son la clásica telita con uno de mis rellenos favoritos: una ensalada de atún con mayonesa que lleva además un poquito de cebolla, tomate picadillo y unas hojitas de cilantro.</small>
+                    </div>
+           </div>      
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://recetadearepas.online/wp-content/uploads/2019/02/arepa-de-huevo-506049.jpg">
+                        <button class="w3-button w3-black" style="border-radius: 30px;">Arepa</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://recetadearepas.online/wp-content/uploads/2019/02/arepa-de-huevo-506049.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Arepa de Carne</h4>
+                        <small>Hecho a base de masa de maíz seco molido o de harina de maíz precocida, de forma circular y aplanada. </small>
+                    </div>
+                </div>      
+                
+        </div>
+        <div class="w3-col m3 col-md-3">
+          <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://static.vix.com/es/sites/default/files/t/te-helado-durazno.jpg">
+                        <button class="w3-button w3-black" style="border-radius: 30px;">Arepa</button>
+                    </div>
+                    <div class="panel-figure">
+                        <img class="img-responsive" src="https://static.vix.com/es/sites/default/files/t/te-helado-durazno.jpg" style="width: 88px; height: 88px; border-radius: 50px;">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">Arepa de Huevo</h4>
+                        <small>La Arepa de Huevo es un bocadillo típico de la región de la Costa Atlántica Colombiana por eso es que también se le conoce con el nombre de Arepaehuevo (que es como allí se pronuncia).</small>
+                    </div>
+                </div>     
+        </div>
+      </div>
+    </div>
+</section>
+
+</div>
+
+<!--footer starts from here-->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class="w3-col m3 col-md-3 ">
+<h5 class="headin5_amrc col_white_amrc pt2">Encuéntrenos</h5>
+<!--headin5_amrc-->
+<p class="mb10">Cafetería Pops es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Cafetería Pops ha sido el texto de relleno estándar de la industria desde el siglo XVI.</p>
+<p><i class="fa fa-location-arrow"></i> Avenida Catalina</p>
+<p><i class="fa fa-phone"></i> 502 85485715</p>
+<p><i class="fa fa fa-envelope"></i> cafeteriapops@gmail.com</p>
+
+
+</div>
+
+
+<div class="w3-col m3 col-md-3">
+<h5 class="headin5_amrc col_white_amrc pt2">Enlaces Rapidos</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Image Rectoucing</a></li>
+<li><a href="http://webenlance.com">Clipping Path</a></li>
+<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+<li><a href="http://webenlance.com">Image Cropping</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class="w3-col m3 col-md-3">
+<h5 class="headin5_amrc col_white_amrc pt2">Enlaces Rápidos</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Café</a></li>
+<li><a href="http://webenlance.com">Té</a></li>
+<li><a href="http://webenlance.com">Comidas</a></li>
+<li><a href="http://webenlance.com">Smoothies</a></li>
+<li><a href="http://webenlance.com">Malteadas</a></li>
+<li><a href="http://webenlance.com">Popote</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class="w3-col m3 col-md-3">
+<h5 class="headin5_amrc col_white_amrc pt2">Siganos</h5>
+<!--headin5_amrc ends here-->
+
+<ul class="footer_ul2_amrc">
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Cafetería Pop's<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Cafetería Pop's<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Cafetería Pop's<a href="#">https://www.lipsum.com/</a></p></li>
+</ul>
+<!--footer_ul2_amrc ends here-->
+</div>
+</div>
+</div>
+
+
+<div class="container">
+  <center></center>
+<ul class="foote_bottom_ul_amrc">
+<li><a href="http://webenlance.com">Acerca De</a></li>
+<li><a href="http://webenlance.com">Café</a></li>
+<li><a href="http://webenlance.com">Menú</a></li>
+<li><a href="http://webenlance.com">Contactanos</a></li>
+<li><a href="http://webenlance.com">Cafetería</a></li>
+<li><a href="http://webenlance.com">Pop's</a></li>
+</ul>
+<!--foote_bottom_ul_amrc ends here-->
+<p class="w3-center">Copyright @2020 | Diseñado Por <a href="#">Cafetería Pop's Chocklit Shop</a></p>
+
+<ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
+
+</body>
+</html>

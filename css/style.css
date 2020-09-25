@@ -1,0 +1,188 @@
+.logo{
+	width: 75%;
+	height: 50%;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/Cafe.png");
+  min-height: 100%;
+}
+.bgimg-2 {
+	background-position: center;
+    background-size: cover;
+	background-image: url("https://www.paraloscuriosos.com/wp-content/uploads/2015/05/05/featured1.jpg");
+  	min-height: 100%;
+}
+
+.bgimg-3 {
+	background-position: center;
+    background-size: cover;
+	background-image: url("https://www.my-hd-wallpapers.com/wall_format/1409219697_coffee-cup-and-the-machine_facebk.jpg");
+  	min-height: 100%;
+}
+
+.bgimg-4 {
+  background-position: center;
+    background-size: cover;
+  background-image: url("https://elgourmet.s3.amazonaws.com/import/una-g_tp0zLfCJR8Scs5yDrb1HM762vqKeXh.jpg");
+    min-height: 100%;
+}
+
+.imagen1 {
+border: 6px solid #ccc;
+float: left;
+margin: 15px;
+-webkit-transition: margin 0.5s ease-out;
+-moz-transition: margin 0.5s ease-out;
+-ms-transition: margin 0.5s ease-out;
+transition: margin 0.5s ease-out;
+}
+.imagen1:hover {
+margin-top: 2px;
+}
+
+.imagen2{
+margin: 20px;
+border: 5px solid #eee;
+-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+}
+.imagen2:hover {
+-webkit-transform: rotate(-7deg);
+-moz-transform: rotate(-7deg);
+-ms-transform: rotate(-7deg);
+transform: rotate(-7deg);
+}
+
+.snip1325 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 255px;
+  max-width: 255px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.snip1325 img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.snip1325:hover img,
+.snip1325.hover img {
+  -webkit-transform: translateX(130px);
+  transform: translateX(130px);
+}
+
+
+
+
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+Image credits: unsplash.com, uifaces.com/authorized
+Image placeholders: placemi.com
+*/
+
+
+#t-cards {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;    
+}
+
+/********************************/
+/*          Panel cards         */
+/********************************/
+.panel.panel-card {
+    position: relative;
+    height: 241px;
+    border: none;
+    overflow: hidden;
+}
+.panel.panel-card .panel-heading {
+    position: relative;
+    z-index: 2;
+    height: 120px;
+    border-bottom-color: #fff;
+    overflow: hidden;
+    
+    -webkit-transition: height 600ms ease-in-out;
+            transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 120%;
+    
+    -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+}
+.panel.panel-card .panel-heading button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 3;
+}
+.panel.panel-card .panel-figure {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    z-index: 3;
+    opacity: 1;
+    
+    -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+    
+    -webkit-transition: opacity 400ms ease-in-out;
+            transition: opacity 400ms ease-in-out;
+}
+
+.panel.panel-card .panel-body {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    -webkit-transition: padding 400ms ease-in-out;
+            transition: padding 400ms ease-in-out;
+} 
+
+.panel.panel-card .panel-thumbnails {
+    padding: 0 15px 20px;
+}
+.panel-thumbnails .thumbnail {
+    width: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+} 
+
+
+.panel.panel-card:hover .panel-heading {
+    height: 55px;
+    
+    -webkit-transition: height 400ms ease-in-out;
+            transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+    opacity: 0;
+    
+    -webkit-transition: opacity 400ms ease-in-out;
+            transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-body {
+    padding-top: 20px;
+    
+    -webkit-transition: padding 400ms ease-in-out;
+            transition: padding 400ms ease-in-out;
+}

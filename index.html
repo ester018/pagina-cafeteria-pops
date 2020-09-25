@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Cafetería Pop's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/contactos.css">
+<script src="https://kit.fontawesome.com/49843a2e73.js" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-wide"><img class="logo" src="img/Logo.png"> </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small " style="padding: 15px;">
+      <a href="index.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;">ACERCA DE</a>
+      <a href="cafe.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;"><i class="fas fa-mug-hot"></i> CAFÉ</a>
+      <a href="menu.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;"><i class="far fa-caret-square-down"></i> MENÚ</a>
+      <a href="contactanos.html" class="w3-bar-item w3-button" style="transition: all 0.4s linear;
+  border-radius: 5px;"><i class="fa fa-envelope"></i> CONTACTANOS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ACERCA DE</a>
+  <a href="cafe.html" onclick="w3_close()" class="w3-bar-item w3-button">CAFÉ</a>
+  <a href="menu.html" onclick="w3_close()" class="w3-bar-item w3-button">MENÚ</a>
+  <a href="contactanos.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTANOS</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Un buen día Inicia con...</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Un buen Café y una Sonrisa</span><br>
+    <span class="w3-large">Un buen Café y una Sonrisa</span>
+    <p><a href="#" class="w3-button w3-red w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'" style="transition: all 0.4s linear; border-radius: 5px;">Suscribete</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">SOBRE LA EMPRESA</h3>
+  <p class="w3-center w3-large">Características Claves de Nuestra Empresa</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter w3-col m4">
+      <i class="fas fa-coffee w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Mision</p>
+      <p>Satisfacer plenamente las necesidades de nuestros clientes y finalmente sorprenderlos en sus expectativas, brindándoles un excelente servicio y haciendo que la cafetería esté cada vez más extendida y popularizada.</p>
+    </div>
+    <div class="w3-quarter w3-col m4">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Vision</p>
+      <p>Ser una referencia de excelencia en productos y servicios. Tener un ambiente agradable, que se convierte en un refugio, un descanso de la vida cotidiana y, aun así, disfrutar de una bebida o comida perfecta, hecha a la medida, para él.</p>
+    </div>
+   
+    <div class="w3-quarter w3-col m4">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Apoyo</p>
+      <p>Tenemos un marco legal efectivo, contamos con el apoyo de un sector comercial progresista y comprometido, contamos con el apoyo de nuestros empleados que fueron seleccionados con un equipo profesional</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container" style="padding:128px 16px; background: linear-gradient(145deg,#E0613E ,#EBA490 ); ">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <p class="w3-large">Un "Vamos por un Café"</p>
+      <p>Vale más que mil llamadas y mensajes por whatsapp</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fas fa-coffee"> </i> Vamos Por un Café</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://cadenaser00.epimg.net/programa/imagenes/2016/02/18/hora_14_fin_de_semana/1455793565_872241_1455807726_noticia_normal.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:100px 16px" id="work">
+ <font face="Rockwell Condensed"> <h3 class="w3-center">CONOCENOS</h3></font>
+  <p class="w3-center w3-large">Un lugar donde relajarte</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m4">
+     <figure class="snip1325"><a href="#"><img src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/ptgvkxrtwux5yrukndxp/pops-chock-lit-shoppe" alt="ls-sample4"/></a></figure>
+    </div>
+    <div class="w3-col l3 m4">
+     <figure class="snip1325"><a href="#"><img src="https://curiocity.com/vancouver/wp-content/uploads/2019/04/curiocity_rockos-1-of-15.jpg"/></a></figure>
+    </div>
+  
+    <div class="w3-col l3 m6">
+      <figure class="snip1325"><a href="#"><img src="https://static.wikia.nocookie.net/riverdale/images/b/be/Riverdale_%28Pueblo%29_-_Temporada_3_-_08.jpg/revision/latest?cb=20190710232333&path-prefix=es" alt="ls-sample4"/></a></figure>
+    </div>
+    <div class="w3-col l3 m6">
+      <figure class="snip1325"><a href="#"><img src=" https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/22365415_1497563383613755_5939907348666122953_n.jpg?_nc_cat=104&_nc_sid=19026a&_nc_ohc=c8k_vC-z5S0AX88zcs1&_nc_ht=scontent.fgua3-2.fna&oh=259fb8f20a5bc29b40c34a9eada81eb8&oe=5F8D96C7" alt="ls-sample4" alt="ls-sample4"/></a></figure>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+     <figure class="snip1325"><a href="#"><img src="https://cdnb.artstation.com/p/assets/images/images/010/922/177/large/khoi-kevin-le-dinh-kevinle-diner.jpg?1526954671" alt="ls-sample4"/></a></figure>
+    </div>
+    <div class="w3-col l3 m6">
+      <figure class="snip1325"><a href="#"><img src="https://2.bp.blogspot.com/-MCZkn68YLMY/XAjz0B_pG7I/AAAAAAAADKM/xR6Di8UQe0UE-fiHI8hhq35e5xX2vM0OwCEwYBhgL/s1600/User-OhMyOskarr-25.gif"/></a></figure>
+    </div>
+    <div class="w3-col l3 m6">
+       <figure class="snip1325"><a href="#"><img src="https://pm1.narvii.com/6855/aafe7c2b5f19c23275f02bbffaef5309aff82df4v2_hq.jpg"/></a></figure>
+    </div>
+    <div class="w3-col l3 m6">
+       <figure class="snip1325"><a href="#"><img src="https://i.pinimg.com/originals/f9/b9/8b/f9b98b607a39b5d34b06d1bdb17193c9.gif"/></a></figure>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container" style="padding:128px 16px; background: linear-gradient(145deg,#E0613E ,#EBA490 ); ">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Lo que nos Apasiona</h3>
+      <p>Somos apasionadamente conscientes del mundo que nos rodea y queremos lo mejor para él. Sabemos que el mundo impacta nuestra historia. Sabemos que nuestra historia impacta al mundo.
+Invitamos a otros a despertar, con nosotros. </p>
+      <p>Tenemos la pasión de descubrir, aprender y probar cosas nuevas. Somos implacables en esta búsqueda. Preguntamos, preguntamos y volvemos a preguntar.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fas fa-coffee w3-margin-right"></i>Calidad</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"><i class="fas fa-concierge-bell w3-margin-right"></i>Servicio</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <center><h2 class="w3-wide">Suscribite</h2></center>
+      <p>Únase a la lista de correo para recibir actualizaciones sobre las últimas publicaciones de nuestra pagina</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Ingresa tu Correo Electronico"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-pink " onclick="document.getElementById('subscribe').style.display='none'" style="border-radius: 13px;">Suscribirse</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class="w3-col m3 col-md-3 ">
+<h5 class="headin5_amrc col_white_amrc pt2">Encuéntrenos</h5>
+<!--headin5_amrc-->
+<p class="mb10">Cafetería Pops es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Cafetería Pops ha sido el texto de relleno estándar de la industria desde el siglo XVI.</p>
+<p><i class="fa fa-location-arrow"></i> Avenida Catalina</p>
+<p><i class="fa fa-phone"></i> 502 85485715</p>
+<p><i class="fa fa fa-envelope"></i> cafeteriapops@gmail.com</p>
+
+
+</div>
+
+
+<div class="w3-col m3 col-md-3">
+<h5 class="headin5_amrc col_white_amrc pt2">Enlaces Rapidos</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Image Rectoucing</a></li>
+<li><a href="http://webenlance.com">Clipping Path</a></li>
+<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+<li><a href="http://webenlance.com">Image Cropping</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class="w3-col m3 col-md-3">
+<h5 class="headin5_amrc col_white_amrc pt2">Enlaces Rápidos</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Café</a></li>
+<li><a href="http://webenlance.com">Té</a></li>
+<li><a href="http://webenlance.com">Comidas</a></li>
+<li><a href="http://webenlance.com">Smoothies</a></li>
+<li><a href="http://webenlance.com">Malteadas</a></li>
+<li><a href="http://webenlance.com">Popote</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class="w3-col m3 col-md-3">
+<h5 class="headin5_amrc col_white_amrc pt2">Siganos</h5>
+<!--headin5_amrc ends here-->
+
+<ul class="footer_ul2_amrc">
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Cafetería Pop's<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Cafetería Pop's<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Cafetería Pop's<a href="#">https://www.lipsum.com/</a></p></li>
+</ul>
+<!--footer_ul2_amrc ends here-->
+</div>
+</div>
+</div>
+
+
+<div class="container">
+  <center></center>
+<ul class="foote_bottom_ul_amrc">
+<li><a href="http://webenlance.com">Acerca De</a></li>
+<li><a href="http://webenlance.com">Café</a></li>
+<li><a href="http://webenlance.com">Menú</a></li>
+<li><a href="http://webenlance.com">Contactanos</a></li>
+<li><a href="http://webenlance.com">Cafetería</a></li>
+<li><a href="http://webenlance.com">Pop's</a></li>
+</ul>
+<!--foote_bottom_ul_amrc ends here-->
+<p class="w3-center">Copyright @2020 | Diseñado Por <a href="#">Cafetería Pop's Chocklit Shop</a></p>
+
+<ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
